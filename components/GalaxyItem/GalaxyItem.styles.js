@@ -36,4 +36,16 @@ export const styles = StyleSheet.create({
     color: "#f1f1f1",
     fontSize: 16,
   },
+
+  // Style: subtitleCTA
+  subtitleCTA: {
+    textDecorationLine: "underline",
+  },
+
+  // buttonContainer
+  buttonContainer: {
+    bottom: 50,
+    position: "absolute",
+    width: "100%",
+  },
 });

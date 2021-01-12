@@ -9,34 +9,35 @@ import { styles } from "./GalaxyItem.styles";
 import { StyledButton } from "../index";
 
 // Component: GalaxyItem
-export default function GalaxyItem() {
+export default function GalaxyItem({ headline, subtitle, subtitleCTA, image }) {
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={require("../../assets/images/wall-3.jpg")}
-        style={styles.image}
-      />
+      <ImageBackground source={image} style={styles.image} />
 
       <View style={styles.titles}>
-        <Text style={styles.headline}>Andromeda</Text>
-        <Text style={styles.subtitle}>4 billion years until we meet...</Text>
+        <Text style={styles.headline}>{headline}</Text>
+        <Text style={styles.subtitle}>
+          {subtitle} <Text style={styles.subtitleCTA}>{subtitleCTA}</Text>
+        </Text>
       </View>
 
-      <StyledButton
-        type="primary"
-        content={"Custom Order"}
-        onPress={() => {
-          console.warn("Custom Order was pressed");
-        }}
-      />
+      <View style={styles.buttonContainer}>
+        <StyledButton
+          type="primary"
+          content={"Custom Order"}
+          onPress={() => {
+            console.warn("Custom Order was pressed");
+          }}
+        />
 
-      <StyledButton
-        type="secondary"
-        content={"Existing Order"}
-        onPress={() => {
-          console.warn("Existing Order was pressed");
-        }}
-      />
+        <StyledButton
+          type="secondary"
+          content={"Existing Order"}
+          onPress={() => {
+            console.warn("Existing Order was pressed");
+          }}
+        />
+      </View>
     </View>
   );
 }
