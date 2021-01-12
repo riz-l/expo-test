@@ -1,12 +1,12 @@
 // Import: Dependencies
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 
 // Styles
 export const styles = StyleSheet.create({
   // Style: container
   container: {
-    height: "100%",
-    width: "100%",
+    height: Dimensions.get("window").height,
+    width: Dimensions.get("window").width,
   },
 
   // Style: image
@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
   // Style: titles
   titles: {
     alignItems: "center",
-    marginTop: "30%",
+    marginTop: "35%",
     width: "100%",
   },
 

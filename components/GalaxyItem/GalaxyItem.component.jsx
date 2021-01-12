@@ -9,7 +9,9 @@ import { styles } from "./GalaxyItem.styles";
 import { StyledButton } from "../index";
 
 // Component: GalaxyItem
-export default function GalaxyItem({ headline, subtitle, subtitleCTA, image }) {
+export default function GalaxyItem(props) {
+  const { headline, subtitle, subtitleCTA, image } = props.galaxy;
+
   return (
     <View style={styles.container}>
       <ImageBackground source={image} style={styles.image} />
