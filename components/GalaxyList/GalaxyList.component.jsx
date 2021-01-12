@@ -7,7 +7,7 @@ import data from "./galaxyListData";
 import { styles } from "./GalaxyList.styles";
 
 // Import: Components
-import { GalaxyItem } from "../index";
+import GalaxyItem from "../GalaxyItem/GalaxyItem.component";
 
 // Component: GalaxyList
 export default function GalaxyList() {
@@ -15,6 +15,7 @@ export default function GalaxyList() {
     <View style={styles.container}>
       <FlatList
         data={data}
+        keyExtractor={(item) => item.id}
         renderItem={({ item }) => <GalaxyItem galaxy={item} />}
         snapToAlignment={"start"}
         decelerationRate={"fast"}

@@ -6,7 +6,7 @@ import { ImageBackground, Text, View } from "react-native";
 import { styles } from "./GalaxyItem.styles";
 
 // Import: Components
-import { StyledButton } from "../index";
+import StyledButton from "../StyledButton/StyledButton.component";
 
 // Component: GalaxyItem
 export default function GalaxyItem(props) {
