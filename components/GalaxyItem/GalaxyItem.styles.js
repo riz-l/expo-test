@@ -5,23 +5,23 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   // Style: container
   container: {
-    width: "100%",
     height: "100%",
+    width: "100%",
   },
 
   // Style: image
   image: {
-    width: "100%",
     height: "100%",
-    resizeMode: "cover",
     position: "absolute",
+    width: "100%",
+    resizeMode: "cover",
   },
 
   // Style: titles
   titles: {
+    alignItems: "center",
     marginTop: "30%",
     width: "100%",
-    alignItems: "center",
   },
 
   // Style: headline
@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
 
   // Style: subtitle
   subtitle: {
-    fontSize: 16,
     color: "#f1f1f1",
+    fontSize: 16,
   },
 });
